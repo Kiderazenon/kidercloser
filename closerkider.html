@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kider Azenon, Closer High Ticket expert. Je transforme vos appels de vente en commissions grâce à une structure de closing chirurgicale. Augmentez votre CA.">
+    <meta name="keywords"
+        content="Closer High Ticket, Closing, Vente B2B, Vente B2C, Formation Closing, Kider Azenon, Expert Vente, Augmenter CA">
+    <meta name="author" content="Kider Azenon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-site.com/">
+    <meta property="og:title" content="Kider Azenon | Expert Closer High Ticket">
+    <meta property="og:description"
+        content="Vos prospects n'achètent pas ? Je transforme vos appels en commissions grâce à une structure de vente chirurgicale.">
+    <meta property="og:image" content="https://votre-site.com/397644.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://votre-site.com/">
+    <meta property="twitter:title" content="Kider Azenon | Expert Closer High Ticket">
+    <meta property="twitter:description"
+        content="Vos prospects n'achètent pas ? Je transforme vos appels en commissions grâce à une structure de vente chirurgicale.">
+    <meta property="twitter:image" content="https://votre-site.com/397644.png">
+
+    <title>Kider Azenon | Closer High Ticket</title>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Kider Azenon - Closer High Ticket",
+      "image": "https://votre-site.com/397644.png",
+      "description": "Expert en closing d'offres High Ticket. Transformez vos prospects qualifiés en clients sans friction.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BJ"
+      },
+      "telephone": "+2290195702586",
+      "email": "kiderazenon77@gmail.com",
+      "priceRange": "$$$"
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+        }
+
+        .bg-navy {
+            background-color: #0f172a;
+        }
+
+        .text-gold {
+            color: #e2b170;
+        }
+
+        .bg-gold {
+            background-color: #e2b170;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+
+        /* Custom scrollbar for premium feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e2b170;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- Header / Nav -->
+    <nav class="fixed w-full z-50 bg-navy/90 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-white font-bold text-xl tracking-tighter uppercase">
+                KIDER <span class="text-gold">AZENON</span>
+            </div>
+            <button onclick="openModal()"
+                class="hidden md:block bg-gold hover:bg-white text-navy font-bold py-2 px-6 rounded-full transition-all text-sm uppercase tracking-wider animate-pulse">
+                Audit Gratuit
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="reveal active">
+                <span
+                    class="inline-block px-4 py-1 rounded-full bg-gold/10 text-gold text-sm font-semibold mb-6 border border-gold/20 uppercase tracking-widest">
+                    Expert High Ticket Closing
+                </span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Vos prospects sont intéressés… <br><span class="text-gold italic">mais n’achètent toujours pas
+                        ?</span>
+                </h1>
+                <p class="text-slate-300 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
+                    Arrêtez de laisser l'argent sur la table. Je transforme vos appels en commissions grâce à une
+                    structure de vente chirurgicale et ROIste.
+                </p>
+
+                <!-- Quick Lead Capture -->
+                <div class="max-w-xl mb-6">
+                    <div
+                        class="flex flex-col sm:flex-row gap-3 bg-white/5 p-2 rounded-2xl border border-white/10 backdrop-blur-sm">
+                        <input type="email" id="heroEmail" placeholder="Votre email pro"
+                            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Veuillez entrer une adresse e-mail valide"
+                            class="flex-1 px-5 py-4 rounded-xl bg-white text-navy focus:outline-none focus:ring-2 focus:ring-gold shadow-inner"
+                            required>
+                        <button onclick="transferEmail()"
+                            class="bg-gold hover:bg-white text-navy font-extrabold px-8 py-4 rounded-xl transition-all text-center animate-pulse whitespace-nowrap shadow-lg">
+                            🚀 Audit Gratuit
+                        </button>
+                    </div>
+                    <p class="text-slate-400 text-xs mt-3 ml-2">
+                        <i class="fas fa-shield-alt mr-1"></i> Réponse sous 24h • Analyse 100% confidentielle
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center items-center reveal active" style="transition-delay: 200ms;">
+                <div class="absolute inset-0 bg-gold/10 rounded-full blur-3xl animate-pulse"></div>
+                <div
+                    class="relative w-full max-w-md aspect-square overflow-hidden rounded-[2.5rem] border-4 border-white/10 shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                    <!-- Image Utilisateur -->
+                    <img src="397644.png" alt="Kider Azenon - Expert Closer High Ticket en plein appel de vente"
+                        class="w-full h-full object-cover">
+                </div>
+                <!-- Floating Badge -->
+                <div
+                    class="absolute -bottom-4 -right-4 bg-white p-4 rounded-2xl shadow-2xl hidden lg:block border border-slate-100">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-green-500 w-3 h-3 rounded-full animate-ping"></div>
+                        <span class="text-navy font-bold text-sm tracking-tight">Disponible pour nouveaux projets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems / Pain Points -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6 tracking-tight">Le coût de l'inaction.</h2>
+                <p class="text-slate-500 text-lg">Chaque jour sans processus de closing efficace est une vente qui part
+                    chez vos concurrents.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-10 rounded-3xl bg-slate-50 border border-slate-100 reveal hover:shadow-xl transition-all"
+                    style="transition-delay: 100ms;">
+                    <div
+                        class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-sm">
+                        <i class="fas fa-phone-slash"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-navy">Appels Flous</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed italic">"Le prospect finit par dire 'je vais
+                        réfléchir' et ne rappelle jamais."</p>
+                </div>
+                <div class="p-10 rounded-3xl bg-slate-50 border border-slate-100 reveal hover:shadow-xl transition-all"
+                    style="transition-delay: 200ms;">
+                    <div
+                        class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-sm">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-navy">Peur du Prix</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed italic">"Vous baissez vos tarifs car vous ne savez
+                        pas défendre la valeur de votre offre."</p>
+                </div>
+                <div class="p-10 rounded-3xl bg-slate-50 border border-slate-100 reveal hover:shadow-xl transition-all"
+                    style="transition-delay: 300ms;">
+                    <div
+                        class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-sm">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-navy">Pas de Relance</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed italic">"Vous abandonnez des leads qualifiés car
+                        vous n'avez pas de système de follow-up."</p>
+                </div>
+                <div class="p-10 rounded-3xl bg-slate-50 border border-slate-100 reveal hover:shadow-xl transition-all"
+                    style="transition-delay: 400ms;">
+                    <div
+                        class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-sm">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-navy">Image Dégradée</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed italic">"Un closing trop agressif ou trop mou qui
+                        nuit à votre réputation premium."</p>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center reveal">
+                <button onclick="openModal()"
+                    class="bg-navy hover:bg-gold hover:text-navy text-white font-bold py-5 px-12 rounded-2xl transition-all inline-block shadow-2xl transform hover:-translate-y-1">
+                    ⚡ Arrêter de perdre de l'argent
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authority Pillars -->
+    <section class="py-24 bg-slate-50 border-y border-slate-200">
+        <div class="container mx-auto px-6 text-center max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-navy mb-16 reveal uppercase tracking-widest">Psychologie &
+                Performance</h2>
+            <div class="grid md:grid-cols-3 gap-16 reveal">
+                <div class="group">
+                    <h3 class="text-6xl font-black text-gold mb-4 transition-transform group-hover:scale-110">HT</h3>
+                    <p class="text-navy font-bold text-lg mb-2">High Ticket Only</p>
+                    <p class="text-slate-500 text-sm font-medium">Spécialisé dans les offres à plus de 2000€.</p>
+                </div>
+                <div class="group border-x border-slate-200 px-4">
+                    <h3 class="text-6xl font-black text-gold mb-4 transition-transform group-hover:scale-110">ROI</h3>
+                    <p class="text-navy font-bold text-lg mb-2">Focus Rentabilité</p>
+                    <p class="text-slate-500 text-sm font-medium">Chaque appel est traité comme un investissement
+                        business.</p>
+                </div>
+                <div class="group">
+                    <h3 class="text-6xl font-black text-gold mb-4 transition-transform group-hover:scale-110">24h</h3>
+                    <p class="text-navy font-bold text-lg mb-2">Disponibilité</p>
+                    <p class="text-slate-500 text-sm font-medium">Réactivité totale en remote sur vos leads mondiaux.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="py-24 bg-navy text-white relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="lg:w-1/2 reveal">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-10 leading-tight">Ma méthode : <br><span
+                            class="text-gold italic">Éthique & Autorité</span></h2>
+                    <div class="space-y-10">
+                        <div class="flex gap-6 items-start">
+                            <span
+                                class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold flex-shrink-0 border border-gold/30">1</span>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Diagnostic Chirurgical</h4>
+                                <p class="text-slate-400 leading-relaxed">Je ne vends pas, je résous. J'identifie le
+                                    blocage réel pour créer une urgence naturelle.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <span
+                                class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold flex-shrink-0 border border-gold/30">2</span>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Ancrage de Valeur</h4>
+                                <p class="text-slate-400 leading-relaxed">Je connecte votre solution aux objectifs
+                                    financiers et de vie du client potentiel.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <span
+                                class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold flex-shrink-0 border border-gold/30">3</span>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Engagement Sans Friction</h4>
+                                <p class="text-slate-400 leading-relaxed">Closing naturel par réduction des doutes. Pas
+                                    de forcing, juste de la certitude.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 grid grid-cols-2 gap-6 reveal" style="transition-delay: 200ms;">
+                    <div class="glass-card p-8 rounded-3xl border-gold/10 hover:border-gold/40 transition-colors">
+                        <i class="fas fa-brain text-gold text-3xl mb-6"></i>
+                        <h4 class="font-bold text-lg mb-2">Psychologie</h4>
+                        <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Maîtrise comportementale
+                        </p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl border-gold/10 hover:border-gold/40 transition-colors">
+                        <i class="fas fa-shield-virus text-gold text-3xl mb-6"></i>
+                        <h4 class="font-bold text-lg mb-2">Anti-Objection</h4>
+                        <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Système de désamorçage</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl border-gold/10 hover:border-gold/40 transition-colors">
+                        <i class="fas fa-rocket text-gold text-3xl mb-6"></i>
+                        <h4 class="font-bold text-lg mb-2">Relance Pro</h4>
+                        <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Récupération de leads</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl border-gold/10 hover:border-gold/40 transition-colors">
+                        <i class="fas fa-chart-pie text-gold text-3xl mb-6"></i>
+                        <h4 class="font-bold text-lg mb-2">Reporting</h4>
+                        <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Analyse de vos KPIs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-[-10%] right-[-5%] w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-[-10%] left-[-5%] w-96 h-96 bg-navy/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span
+                    class="inline-block px-4 py-1 rounded-full bg-navy/5 text-navy text-sm font-semibold mb-6 border border-navy/10 uppercase tracking-widest">
+                    Preuve Sociale
+                </span>
+                <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6 tracking-tight">Ils ont explosé leur CA.</h2>
+                <p class="text-slate-500 text-lg">Ne me croyez pas sur parole. Écoutez les entrepreneurs qui ont déjà
+                    délégué leur closing.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 reveal hover:-translate-y-2 transition-transform duration-300"
+                    style="transition-delay: 100ms;">
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-8 italic leading-relaxed">"Avant Kider, je perdais 4 prospects sur 5 au
+                        moment d'annoncer le prix (3500€). Dès son premier mois, mon taux de conversion a fait x2. Une
+                        structure de vente implacable."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-xl">
+                            M</div>
+                        <div>
+                            <h4 class="font-bold text-navy">Marc D.</h4>
+                            <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Coach Business</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 reveal hover:-translate-y-2 transition-transform duration-300"
+                    style="transition-delay: 200ms;">
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-8 italic leading-relaxed">"Une écoute chirurgicale et zéro forcing.
+                        Kider vend avec élégance. Mes clients me remercient après avoir acheté ! Il a généré plus de
+                        45K€ le trimestre dernier."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-xl">
+                            S</div>
+                        <div>
+                            <h4 class="font-bold text-navy">Sophie L.</h4>
+                            <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Agence Marketing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 reveal hover:-translate-y-2 transition-transform duration-300"
+                    style="transition-delay: 300ms;">
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-8 italic leading-relaxed">"Le vrai plus de Kider, c'est son système de
+                        relance. Il a rattrapé des leads que je pensais 'morts' depuis des mois. Un investissement
+                        rentabilisé dès le 2ème appel."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-xl">
+                            A</div>
+                        <div>
+                            <h4 class="font-bold text-navy">Alexandre P.</h4>
+                            <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Infopreneur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white relative">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6 tracking-tight">Questions Fréquentes</h2>
+                <p class="text-slate-500 text-lg">Tout ce que vous devez savoir avant de me confier vos leads.</p>
+            </div>
+
+            <div class="space-y-4 reveal">
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+                    <button
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-slate-50 transition-colors">
+                        <span class="font-bold text-navy text-lg">Prenez-vous un fixe ou travaillez-vous à la commission
+                            ?</span>
+                        <i class="fas fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50">
+                        <p class="px-8 pb-6 text-slate-600 leading-relaxed">
+                            Je fonctionne avec un modèle 100% aligné sur vos résultats, généralement à la commission
+                            (entre 10% et 20% selon l'offre et le volume). Pour les lancements ou besoins spécifiques,
+                            un setup initial peut être demandé. Tout est transparent lors de notre appel.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+                    <button
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-slate-50 transition-colors">
+                        <span class="font-bold text-navy text-lg">Dans quelles niches opérez-vous principalement
+                            ?</span>
+                        <i class="fas fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50">
+                        <p class="px-8 pb-6 text-slate-600 leading-relaxed">
+                            J'excelle particulièrement dans les offres d'accompagnement B2B et B2C, le coaching, les
+                            agences marketing (SMMA, SEO), l'infoprenariat et les services High Ticket (+2000€). Ma
+                            méthode de vente consultative s'adapte à toute offre apportant une réelle valeur.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+                    <button
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-slate-50 transition-colors">
+                        <span class="font-bold text-navy text-lg">Comment s'intègre Kider dans mon processus existant
+                            ?</span>
+                        <i class="fas fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50">
+                        <p class="px-8 pb-6 text-slate-600 leading-relaxed">
+                            Très simplement. Vous me connectez à votre calendrier (Calendly, etc.) et à votre CRM
+                            (GoHighLevel, Hubspot...). Je gère les appels, je note les retours directement dans le CRM,
+                            et j'assure les relances. Vous n'avez qu'à vous concentrer sur la délivrabilité.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+                    <button
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-slate-50 transition-colors">
+                        <span class="font-bold text-navy text-lg">Quel est le délai pour commencer ?</span>
+                        <i class="fas fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50">
+                        <p class="px-8 pb-6 text-slate-600 leading-relaxed">
+                            Après notre audit initial et la validation de notre collaboration, l'onboarding prend
+                            généralement 48 à 72 heures. Le temps pour moi de maîtriser votre avatar client, vos
+                            objections récurrentes et de m'approprier votre offre avant de prendre le premier appel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Conversion Form -->
+    <section id="form" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div
+                class="max-w-6xl mx-auto bg-navy rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row reveal border border-white/5">
+                <div
+                    class="md:w-2/5 p-12 lg:p-16 text-white flex flex-col justify-center bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
+                    <h3 class="text-3xl lg:text-4xl font-black mb-6 leading-tight uppercase tracking-tighter">Prêt à
+                        dominer <br><span class="text-gold">votre marché ?</span></h3>
+                    <p class="text-slate-400 mb-10 text-lg">Chaque jour qui passe est un prospect qualifié qui ne
+                        deviendra jamais client. Reprenez le contrôle.</p>
+
+                    <ul class="space-y-6">
+                        <li class="flex items-center gap-4 group">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-navy transition-all">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-bold text-sm">Audit complet de votre funnel de vente</span>
+                        </li>
+                        <li class="flex items-center gap-4 group">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-navy transition-all">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-bold text-sm">Identification des fuites de CA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:w-3/5 p-12 lg:p-16 bg-slate-50">
+                    <h4 class="text-2xl font-bold text-navy mb-2">Analyse Stratégique Gratuite</h4>
+                    <p class="text-slate-500 mb-10">Laissez vos coordonnées pour un échange direct et confidentiel.</p>
+
+                    <!-- FORMULAIRE FORMSPREE CONFIGURÉ -->
+                    <form action="https://formspree.io/f/xwvyngrj" method="POST" id="mainLeadForm" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                    class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-2 ml-1">Nom
+                                    Complet</label>
+                                <input type="text" name="Nom" required placeholder="Ex: Jean Dupont"
+                                    class="w-full px-6 py-5 rounded-2xl border-2 border-slate-200 focus:border-gold outline-none bg-white transition-all font-semibold">
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-2 ml-1">Email
+                                    Professionnel</label>
+                                <input type="email" name="Email" id="mainEmailField" required
+                                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                                    title="Veuillez entrer une adresse e-mail valide" placeholder="contact@domaine.com"
+                                    class="w-full px-6 py-5 rounded-2xl border-2 border-slate-200 focus:border-gold outline-none bg-white transition-all font-semibold">
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                    class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-2 ml-1">Téléphone
+                                    (WhatsApp)</label>
+                                <div class="flex">
+                                    <select name="CountryCode"
+                                        class="w-2/5 sm:w-1/3 px-3 py-5 rounded-l-2xl border-2 border-r-0 border-slate-200 focus:border-gold outline-none bg-slate-50 font-semibold text-sm">
+                                        <option value="+33">🇫🇷 +33</option>
+                                        <option value="+32">🇧🇪 +32</option>
+                                        <option value="+41">🇨🇭 +41</option>
+                                        <option value="+1">🇨🇦 +1</option>
+                                        <option value="+229" selected>🇧🇯 +229</option>
+                                        <option value="+225">🇨🇮 +225</option>
+                                        <option value="+221">🇸🇳 +221</option>
+                                        <option value="+237">🇨🇲 +237</option>
+                                        <option value="+243">🇨🇩 +243</option>
+                                        <option value="+212">🇲🇦 +212</option>
+                                        <option value="+213">🇩🇿 +213</option>
+                                        <option value="+216">🇹🇳 +216</option>
+                                        <option value="">Autre</option>
+                                    </select>
+                                    <input type="tel" name="WhatsApp" required placeholder="Numéro"
+                                        class="w-3/5 sm:w-2/3 px-6 py-5 rounded-r-2xl border-2 border-slate-200 focus:border-gold outline-none bg-white transition-all font-semibold">
+                                </div>
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-2 ml-1">Type
+                                    de Business</label>
+                                <select name="Business"
+                                    class="w-full px-6 py-5 rounded-2xl border-2 border-slate-200 focus:border-gold outline-none bg-white font-semibold appearance-none">
+                                    <option>Agence Marketing</option>
+                                    <option>Coaching / Consulting</option>
+                                    <option>Infoprenariat</option>
+                                    <option>SaaS / Tech</option>
+                                    <option>Autre</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-gold hover:bg-navy hover:text-white text-navy font-black py-6 rounded-2xl transition-all shadow-xl shadow-gold/20 uppercase tracking-widest text-sm flex items-center justify-center gap-3 animate-pulse">
+                            ⚡ Réserver mon échange stratégique
+                        </button>
+
+                        <div class="flex justify-center gap-6 mt-4 opacity-60">
+                            <div class="text-[10px] font-bold uppercase tracking-widest"><i
+                                    class="fas fa-lock mr-2"></i>Privé</div>
+                            <div class="text-[10px] font-bold uppercase tracking-widest"><i
+                                    class="fas fa-bolt mr-2"></i>Sous 24H</div>
+                            <div class="text-[10px] font-bold uppercase tracking-widest"><i
+                                    class="fas fa-times mr-2"></i>Sans Engagement</div>
+                        </div>
+                    </form>
+
+                    <div id="successMsg"
+                        class="hidden text-green-700 font-bold text-center mt-6 p-6 bg-green-100 rounded-3xl border border-green-200">
+                        <i class="fas fa-check-circle mr-2"></i> Demande transmise avec succès ! Je reviens vers vous
+                        par WhatsApp ou Email sous 24h.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Audit Gratuit -->
+    <div id="auditModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-navy/80 backdrop-blur-sm" onclick="closeModal()"></div>
+
+        <!-- Modal Content -->
+        <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl p-8 m-4 transform scale-95 opacity-0 transition-all duration-300"
+            id="auditModalContent">
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-navy transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-black text-navy uppercase tracking-tighter mb-2">Réserver votre <span
+                        class="text-gold">Audit Gratuit</span></h3>
+                <p class="text-slate-500 text-sm">Laissez vos coordonnées pour planifier notre échange stratégique.</p>
+            </div>
+
+            <form action="https://formspree.io/f/xwvyngrj" method="POST" id="modalLeadForm" class="space-y-5">
+                <div>
+                    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1 ml-1">Nom
+                        & Prénom</label>
+                    <input type="text" name="Nom" required placeholder="Ex: Jean Dupont"
+                        class="w-full px-5 py-4 rounded-xl border-2 border-slate-200 focus:border-gold outline-none bg-slate-50 transition-all font-semibold">
+                </div>
+                <div>
+                    <label
+                        class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1 ml-1">Adresse
+                        E-mail</label>
+                    <input type="email" name="Email" id="modalEmailField" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                        title="Veuillez entrer une adresse e-mail valide" placeholder="contact@domaine.com"
+                        class="w-full px-5 py-4 rounded-xl border-2 border-slate-200 focus:border-gold outline-none bg-slate-50 transition-all font-semibold">
+                </div>
+                <div>
+                    <label
+                        class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1 ml-1">Numéro
+                        de Téléphone</label>
+                    <div class="flex">
+                        <select name="CountryCode"
+                            class="w-2/5 px-2 py-4 rounded-l-xl border-2 border-r-0 border-slate-200 focus:border-gold outline-none bg-slate-100 font-semibold text-sm">
+                            <option value="+33">🇫🇷 +33</option>
+                            <option value="+32">🇧🇪 +32</option>
+                            <option value="+41">🇨🇭 +41</option>
+                            <option value="+1">🇨🇦 +1</option>
+                            <option value="+229" selected>🇧🇯 +229</option>
+                            <option value="+225">🇨🇮 +225</option>
+                            <option value="+221">🇸🇳 +221</option>
+                            <option value="+237">🇨🇲 +237</option>
+                            <option value="+243">🇨🇩 +243</option>
+                            <option value="+212">🇲🇦 +212</option>
+                            <option value="+213">🇩🇿 +213</option>
+                            <option value="+216">🇹🇳 +216</option>
+                            <option value="">Autre</option>
+                        </select>
+                        <input type="tel" name="WhatsApp" required placeholder="Numéro"
+                            class="w-3/5 px-5 py-4 rounded-r-xl border-2 border-slate-200 focus:border-gold outline-none bg-slate-50 transition-all font-semibold">
+                    </div>
+                </div>
+                <button type="submit"
+                    class="w-full bg-gold hover:bg-navy hover:text-white text-navy font-black py-5 rounded-xl transition-all shadow-lg shadow-gold/20 uppercase tracking-widest text-sm flex items-center justify-center gap-2 mt-4">
+                    Valider ma demande <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+            <div id="modalSuccessMsg"
+                class="hidden text-green-700 font-bold text-center mt-6 p-4 bg-green-100 rounded-xl border border-green-200 text-sm">
+                <i class="fas fa-check-circle mr-2"></i> Demande validée ! Je vous contacte très vite.
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-20 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <h5 class="text-gold font-black text-3xl mb-4 tracking-tighter uppercase">KIDER AZENON</h5>
+            <p class="text-slate-500 text-sm mb-12">Closer High Ticket | Excellence & Discrétion</p>
+
+            <div class="flex flex-wrap justify-center gap-10 text-sm font-semibold mb-12">
+                <a href="https://wa.me/2290195702586"
+                    class="hover:text-gold transition-colors flex items-center gap-2"><i class="fab fa-whatsapp"></i>
+                    +229 01 95 70 25 86</a>
+                <a href="mailto:kiderazenon77@gmail.com"
+                    class="hover:text-gold transition-colors flex items-center gap-2"><i class="fas fa-envelope"></i>
+                    kiderazenon77@gmail.com</a>
+            </div>
+
+            <p class="text-slate-700 text-[10px] uppercase tracking-[0.4em]">&copy; 2024 KIDER AZENON STRATEGY. TOUS
+                DROITS RÉSERVÉS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Reveal Logic
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) { reveals[i].classList.add("active"); }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.onload = reveal;
+
+        // Modal Logic
+        function openModal(email = '') {
+            const modal = document.getElementById('auditModal');
+            const modalContent = document.getElementById('auditModalContent');
+            const emailField = document.getElementById('modalEmailField');
+
+            if (email) {
+                emailField.value = email;
+            }
+
+            modal.classList.remove('hidden');
+            // Trigger reflow
+            void modal.offsetWidth;
+            modalContent.classList.remove('scale-95', 'opacity-0');
+            modalContent.classList.add('scale-100', 'opacity-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('auditModal');
+            const modalContent = document.getElementById('auditModalContent');
+
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        // Email Transfer from Hero to Modal Form
+        function transferEmail() {
+            const emailInput = document.getElementById('heroEmail');
+            if (!emailInput.checkValidity()) {
+                emailInput.reportValidity();
+                return;
+            }
+            openModal(emailInput.value);
+        }
+
+        // Formspree AJAX Submission
+        const form = document.getElementById('mainLeadForm');
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const success = document.getElementById('successMsg');
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i> Transmission sécurisée...';
+
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                form.classList.add('hidden');
+                success.classList.remove('hidden');
+                window.scrollTo({ top: document.getElementById('form').offsetTop + 200, behavior: 'smooth' });
+            } else {
+                btn.disabled = false;
+                btn.innerHTML = 'Erreur technique. Réessayez.';
+            }
+        };
+
+        // Formspree AJAX Submission - Modal Form
+        const modalForm = document.getElementById('modalLeadForm');
+        if (modalForm) {
+            modalForm.onsubmit = async (e) => {
+                e.preventDefault();
+                const btn = modalForm.querySelector('button[type="submit"]');
+                const success = document.getElementById('modalSuccessMsg');
+
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i> Validation...';
+
+                const formData = new FormData(modalForm);
+                const response = await fetch(modalForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    modalForm.classList.add('hidden');
+                    success.classList.remove('hidden');
+                    setTimeout(() => {
+                        closeModal();
+                        setTimeout(() => {
+                            modalForm.reset();
+                            modalForm.classList.remove('hidden');
+                            success.classList.add('hidden');
+                            btn.disabled = false;
+                            btn.innerHTML = 'Valider ma demande <i class="fas fa-arrow-right"></i>';
+                        }, 300);
+                    }, 3000);
+                } else {
+                    btn.disabled = false;
+                    btn.innerHTML = 'Erreur. Réessayez.';
+                }
+            };
+        }
+
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                const isOpen = content.style.maxHeight;
+
+                // Close all others
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    item.style.maxHeight = null;
+                });
+                document.querySelectorAll('.faq-button i').forEach(item => {
+                    item.style.transform = 'rotate(0deg)';
+                });
+
+                if (!isOpen) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Floating CTA Logic
+        const floatingCta = document.getElementById('floating-cta');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                floatingCta.classList.add('translate-y-0', 'opacity-100');
+                floatingCta.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                floatingCta.classList.remove('translate-y-0', 'opacity-100');
+                floatingCta.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+    </script>
+
+    <!-- Floating CTA -->
+    <button onclick="openModal()" id="floating-cta"
+        class="fixed bottom-6 right-6 z-50 bg-gold hover:bg-navy text-navy hover:text-white w-14 h-14 md:w-auto md:h-auto md:px-6 md:py-3 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 transform translate-y-20 opacity-0 group border-2 border-white/20">
+        <i class="fas fa-bolt text-xl md:mr-2 animate-pulse"></i>
+        <span class="hidden md:inline font-bold uppercase tracking-wider text-sm">Réserver un Audit</span>
+    </button>
+</body>
+
+</html>
