@@ -9,6 +9,7 @@
     <meta name="keywords"
         content="Closer High Ticket, Closing, Vente B2B, Vente B2C, Formation Closing, Kider Azenon, Expert Vente, Augmenter CA">
     <meta name="author" content="Kider Azenon">
+    <meta name="theme-color" content="#0f172a">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -46,6 +47,9 @@
     }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -424,7 +428,7 @@
                 <!-- FAQ Item 1 -->
                 <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                     <button
-                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-slate-50 transition-colors">
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-gold hover:bg-slate-50 transition-colors">
                         <span class="font-bold text-navy text-lg">Prenez-vous un fixe ou travaillez-vous à la commission
                             ?</span>
                         <i class="fas fa-chevron-down text-gold transition-transform duration-300"></i>
@@ -442,7 +446,7 @@
                 <!-- FAQ Item 2 -->
                 <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                     <button
-                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-slate-50 transition-colors">
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-gold hover:bg-slate-50 transition-colors">
                         <span class="font-bold text-navy text-lg">Dans quelles niches opérez-vous principalement
                             ?</span>
                         <i class="fas fa-chevron-down text-gold transition-transform duration-300"></i>
@@ -460,7 +464,7 @@
                 <!-- FAQ Item 3 -->
                 <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                     <button
-                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-slate-50 transition-colors">
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-gold hover:bg-slate-50 transition-colors">
                         <span class="font-bold text-navy text-lg">Comment s'intègre Kider dans mon processus existant
                             ?</span>
                         <i class="fas fa-chevron-down text-gold transition-transform duration-300"></i>
@@ -478,7 +482,7 @@
                 <!-- FAQ Item 4 -->
                 <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                     <button
-                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none hover:bg-slate-50 transition-colors">
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-gold hover:bg-slate-50 transition-colors">
                         <span class="font-bold text-navy text-lg">Quel est le délai pour commencer ?</span>
                         <i class="fas fa-chevron-down text-gold transition-transform duration-300"></i>
                     </button>
@@ -591,7 +595,7 @@
                         </div>
 
                         <button type="submit"
-                            class="w-full bg-gold hover:bg-navy hover:text-white text-navy font-black py-6 rounded-2xl transition-all shadow-xl shadow-gold/20 uppercase tracking-widest text-sm flex items-center justify-center gap-3 animate-pulse">
+                            class="w-full bg-gold hover:bg-navy hover:text-white text-navy font-black py-6 rounded-2xl transition-all hover:scale-105 shadow-xl shadow-gold/20 uppercase tracking-widest text-sm flex items-center justify-center gap-3 animate-pulse">
                             ⚡ Réserver mon échange stratégique
                         </button>
 
@@ -675,7 +679,7 @@
                     </div>
                 </div>
                 <button type="submit"
-                    class="w-full bg-gold hover:bg-navy hover:text-white text-navy font-black py-5 rounded-xl transition-all shadow-lg shadow-gold/20 uppercase tracking-widest text-sm flex items-center justify-center gap-2 mt-4">
+                    class="w-full bg-gold hover:bg-navy hover:text-white text-navy font-black py-5 rounded-xl transition-all hover:scale-105 shadow-lg shadow-gold/20 uppercase tracking-widest text-sm flex items-center justify-center gap-2 mt-4">
                     Valider ma demande <i class="fas fa-arrow-right"></i>
                 </button>
             </form>
@@ -701,12 +705,15 @@
                     kiderazenon77@gmail.com</a>
             </div>
 
-            <p class="text-slate-700 text-[10px] uppercase tracking-[0.4em]">&copy; 2024 KIDER AZENON STRATEGY. TOUS
+            <p class="text-slate-700 text-[10px] uppercase tracking-[0.4em]">&copy; <span id="currentYear">2026</span> KIDER AZENON STRATEGY. TOUS
                 DROITS RÉSERVÉS.</p>
         </div>
     </footer>
 
     <script>
+        // Set dynamic copyright year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
         // Reveal Logic
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
